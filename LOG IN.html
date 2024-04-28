@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta menu-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LOG IN</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        window.onload = function() {
+            document.querySelector(".btn").onclick = function() {
+                var username = document.querySelector("input[name='username']").value;
+                var password = document.querySelector("input[name='password']").value;
+
+                if (username !== '' && password !== '') {
+                    window.location.href = "HOME.html";
+                } else {
+                    alert("Harap isi kedua input sebelum melakukan login.");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Alifsyah rahman, home, produk, contak -->
+    <header>
+        <div class="container">
+            <h1><a href="#">LOG IN</a></h1>
+            <ul>
+                <li class="active"><a href="LOG IN.html">LOGIN</a></li>
+                <li><a href="LOG IN.html">PRODUK</a></li>
+                <li><a href="LOG IN.html">KONTAK</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- banner -->
+    <section class="banner">
+        <h2>WELCOME TO ZOID</h2>
+        <img src="C:/Users/Alifsyah/Documents/WEB html/img/zoid.jpg" alt="Deskripsi Gambar">
+    </section>
+
+    <div class="wrapper">
+        <form action="">
+        
+            <!--login-->
+            <h2>Log In</h2>
+
+            <!--input_box_username, password-->
+            <div class="input-box">
+                <input type="text" placeholder="username" name="username" required> 
+                <i class='bx bxs-user' ></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="password" name="password" required> 
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <!-- remember me, forget password-->
+            <div class="remember-forget">
+                <label><input type="checkbox" >Ingatkan</label>
+                <a href="a">Lupa Password?</a>
+            </div>
+
+            <!-- Login -->
+            <button type="button" class="btn">Log In</button>
+
+            <div class="register-link">
+                <p> Tidak Punya Akun? <a href="DAFTAR.html">Daftar</a></p>
+            </div>
+        </form>
+        
+    </div>
+
+
+</body>
+</html>

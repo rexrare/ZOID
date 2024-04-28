@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Courier New;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("C:/Users/Alifsyah/Documents/WEB html/img/bg.jpg");
+    margin-left: 625px;
+    background-size: cover;
+}
+
+/* reset */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* gabungan ZOID, produk dan kontak */
+header h1 {
+    float: left;
+    font-size: 25px;
+    padding: 15px 50px;
+    font-weight: bold;
+    color: #3a3854;
+}
+
+/* untuk mengatur warna dan LOGIN */
+header h1 a {
+    padding: 15px 50px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #3a3854;
+    font-weight: bold;
+}
+
+/* produk dan kontak berada di kanan */
+header ul {
+    float: right;
+    color: #3a3854;
+}
+
+/* urutan produk dan kontak sejajar */
+header ul li {
+    display: inline-block;
+}
+
+/* untuk edit produk dan contact */
+header ul li a {
+    padding: 15px 50px;
+    font-size: 17.5px;
+    display: inline-block;
+    text-decoration: none;
+    color: #3a3854;
+    font-weight: bold;
+}
+
+/*efek muncul login,product, contact */
+header ul li a:hover {
+    background-color: #3a3854;
+    color: whitesmoke;
+}
+
+.active {
+    background-color: #3a3854;
+    color: whitesmoke;
+}
+
+.active a {
+    color: whitesmoke;
+}
+
+/* background box dan ukuran */
+.wrapper {
+    width: 45%;
+    height: 650px;
+    background: #3A3854;
+    border: 4px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: whitesmoke;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 5% 7%;
+    margin: 10vh auto;
+    z-index: 1;
+}
+
+/* Judul Login di atas dan ukuran */
+.wrapper h2 {
+    font-size: 27.5px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* box input KOTAK username dan password*/
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    margin: 32.5px 0 32.5px;
+    margin-top: 25px;
+}
+
+/* box input bulat didalam kotak username dan password dan inputnya */
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    font-size: 10px;
+    color: whitesmoke;
+    padding: 10px 0 7.5px 19px;
+}
+
+/* tulisan username dan password */
+.input-box input::placeholder {
+    color: whitesmoke;
+    font-size: 10px;
+}
+
+/* logo username dan password */
+.input-box i {
+    position: absolute;
+    right: 19px;
+    top: 50%;
+    transform: translateY(-5px);
+    font-size: 10px;
+}
+
+/* remember me, forgot password*/
+.wrapper .remember-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 8.75px;
+    margin: -22.5px 0 1px;
+}
+
+/* lebel remember me, jarak*/
+.remember-forget label input {
+    accent-color: whitesmoke;
+    margin-right: 5px;
+}
+
+/* jarak remember me atas bawah kanan kiri beserta ceckboxnya*/
+.remember-forget label {
+    font-size: 10px;
+    margin: 0 15px;
+}
+
+/* forgot password*/
+.remember-forget a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+/* saat cursor ada di forgot password*/
+.remember-forget a:hover {
+    text-decoration: underline;
+}
+
+/* button login */
+.wrapper .btn {
+    width: 90%;
+    height: 40px;
+    background: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+    margin: 32.5px 0;
+    margin-left: 12.5px;
+}
+
+/* don't have an account + register*/
+.wrapper .register-link {
+    font-size: 8.75px;
+    text-align: center;
+    margin: -17.5px 0 7.5px;
+}
+
+/* register*/
+.register-link p a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* efek register underline*/
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    position: absolute;
+    top: 10vh;
+    left: 32vh;
+    right: 32vh;
+    height: 650px;
+    border: 2px solid rgba(109, 122, 184.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .10);
+    border-radius: 15px;
+    background-size: cover;
+    z-index: -2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(58, 56, 84, .6);
+    border-radius: 15px;
+
+}
+
+.banner h2 {
+    position: absolute;
+    left: 25vh;
+    top: 60vh;
+    color: whitesmoke;
+    z-index: 1;
+    padding: 20px 25px;
+    border: 3px solid whitesmoke;
+}
+
+
+section.banner img {
+    position: absolute;
+    right: 40vh;
+    bottom: 5vh;
+    z-index: 1;
+}

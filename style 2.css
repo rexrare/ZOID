@@ -1,0 +1,330 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: 0;
+	text-decoration: 0;
+	font-family: Courier new bold;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.sidebar{
+	position: fixed;
+	top: 0;
+	left: -250px;
+	width: 250px;
+	height: 100%;
+	background: #042331;
+	transition: all .5s ease;
+}
+
+.sidebar header{
+	font-size: 22px;
+	color: #fff;
+	text-align: center;
+	line-height: 70px;
+	background: #063146;
+	user-select: none;
+}
+.sidebar ul a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 65px;
+	font-size: 20px;
+	color: #fff;
+	padding-left: 40px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid #000;
+	transition: .4s;
+}
+
+ul li:hover a{
+	padding-left: 60px;
+}
+
+.sidebar ul a i{
+	margin-right: 16px;
+}
+#check{
+	display: none;
+}
+label #btn,label #cancel{
+	position: absolute;
+	cursor: pointer;
+	background: #042331;
+	border-radius: 3px;
+}
+
+label #btn{
+	position: absolute;
+	left: 20px;
+	top: 3px;
+	font-size: 15px;
+	color: #fff;
+	padding: 10px;
+	margin-right: 20px;
+	background: #20164a;
+	border-radius: 3px;
+	z-index: 1;
+	cursor: pointer;
+	transition: all .5s;
+}
+
+label #cancel{
+	z-index: 1111;
+	left: -195px;
+	top: 17px;
+	font-size: 30px;
+	color: #0a5275;
+	padding: 4px 9px;
+	transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+	left: 0;
+}
+
+#check:checked ~ label #btn{
+	left: 250px;
+}
+
+#check:checked ~ label #cancel{
+	left: 195px;
+}
+
+
+#check:checked ~ section{
+	margin-left: 250px;
+}
+.section{
+	background-image: url(../img/bg.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+
+
+.medsos {
+	display: flex;
+	justify-content: space-between;
+    padding: 10px;
+    background-color: #20164a;
+    text-align: center;
+}
+
+.medsos up{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.medsos up pi {
+    display: inline-block;
+    color: #FFF;
+    margin-right: 10px;
+    margin-top: 3.5px;
+    position: relative; /* Tambahkan posisi relatif untuk pengaturan pseudo-element */
+}
+
+.medsos up pi:hover::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1; /* Mengatur pseudo-element di bawah teks */
+}
+
+
+.medsos up pi:hover {
+    color: #000000;
+}
+
+
+.medsos up pi:hover {
+    color: #000000;
+}
+
+/* Alifsyah home, product contact*/
+header h1{
+	float: left;
+	padding: 15px 10px;
+	color: #20164a;
+}
+
+header up{
+	float: right;
+}
+
+header up pi{
+	display: inline-block;
+}
+
+
+.medsos .LOGIN{
+	display: inline-block;
+	margin-top: 3.5px;
+	border-left: 3px solid;
+    padding: 0 10px;
+}
+
+
+.medsos .LOGIN:hover{
+	background-color: #fff;
+	color: #20164a;
+}
+
+
+label #LOGIN{
+	left: 40px;
+	top: 25px;
+	font-size: 35px;
+	color: #fff;
+	padding: 6px 12px;
+	transition: all .5s;
+}
+
+#check:checked ~ label #btn{
+	left: 250px;
+	opacity: 0;
+	pointer-events: none;
+}
+
+header up pi a{
+	padding: 25px 20px;
+	display: inline-block;
+}
+header up pi a:hover{
+	background-color: #20164a;
+	color: #fff;
+}
+
+.active{
+	background-color: #20164a;
+	color: #fff;
+}
+
+
+/* jarak search */
+.search {
+	text-align: center;
+	margin-right: 16px;
+	position: relative;
+	left: 75px;
+	right: auto;
+	width: 50%;
+
+}
+
+.input-submit {
+	padding: 5px 16px;
+	background-color: whitesmoke;
+	color: black;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	margin-left: 0;
+
+}
+.input-submit:hover {
+    background-color: gray; /* Warna latar belakang tombol saat dihover */
+}
+
+.input-search {
+	padding: 5px 16px;
+	background-color: whitesmoke;
+	color: black;
+	border: none;
+	border-radius: 5px 0 0 5px;
+	transition: background-color 0.3s;
+	width: 80%;
+}
+
+.banner{
+	height: 65vh;
+	width: 100%;
+	background: #1f1f1f;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: -1;
+}
+.banner:after{
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(34, 0, 172, 0.3);
+}
+.banner h2{
+	color: #fff;
+	z-index: 1;
+	padding: 20px 25px;
+	border: 3px solid #fff;
+	position: relative;
+}
+
+.banner .FIRST{
+	padding: 20px 25px;
+	display: inline-block;
+}
+
+.banner h3{
+	color: #fff;
+	z-index: 1;
+	padding: 23px 15px;
+	border: 3px solid #fff;
+	position: absolute;
+	right: 58.6vh;
+	top: 37vh;
+	font-size: 25px;
+}
+
+#tentang {
+    text-align: center; /* Untuk membuat teks menjadi rata tengah */
+    padding: 50px; /* Memberikan jarak dari tepi elemen */
+    background-color: #6c757d; /* Memberikan warna latar belakang */
+	color: whitesmoke;
+}
+
+
+.ZOID {
+    width: 200px; /* Mengatur lebar elemen */
+}
+
+.link {
+    display: flex; /* Mengubah tata letak elemen menjadi flex */
+    align-items: center; /* Posisi teks dan gambar di tengah secara vertikal */
+    border: 3px solid white;
+    padding: 20px 50px;
+    margin: 50px 25px;
+    background-color: black;
+}
+
+.link img {
+    width: 70px; /* Mengatur lebar gambar */
+    margin-right: 10px; /* Memberikan jarak antara gambar dan teks */
+    z-index: 1;
+}
+
+.Judul-produk {
+    color: white; /* Mengubah warna teks menjadi putih */
+    padding: 5px; /* Memberikan padding agar teks tidak terlalu dekat dengan border */
+    font-weight: bold; /* Membuat teks menjadi tebal */
+    z-index: 1;
+
+}
